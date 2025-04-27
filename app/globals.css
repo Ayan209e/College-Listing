@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --color-white: #f5f3f5;
+  --color-gray: #9c9c9c;
+  --color-primary: #49c5b6;
+  --color-secondary: #2563eb;
+  --color-black: #0d1821;
+}
+
+body {
+  @apply font-rubik;
+  @apply bg-white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+*::selection {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
